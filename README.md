@@ -90,7 +90,7 @@ ALTER USER db_user WITH PASSWORD 'Password123';
 URI подключения: `postgres://db_user:Password123@localhost:5432/db_name`.
 
 ## Шаг 4. Импорт таблиц в БД
-1. Пример импортирта таблицы из каталога на сервере.
+1. Пример импорта таблицы из каталога на сервере.
 > Если в postgresql.conf был изменён порт (по умолчанию 5432), то укажите его в команде `-p ваш_порт`.
 ```
 ./psql -h /tmp -d db_name < /tmp/table_for_import.sql
