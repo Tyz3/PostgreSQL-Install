@@ -108,6 +108,11 @@ su -
 @reboot         user    /home/user/project/bin/pg_ctl -D /home/user/db start
 ```
 
+3. Перезагрузка планировщика cron.
+```
+systemctl restart cron
+```
+
 ## Шаг 6. Дополнительные действия
 1. Очистить историю команда в консоли.
 ```
