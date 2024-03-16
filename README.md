@@ -1,5 +1,5 @@
 # PostgreSQL-Install
-Версия Postgres в этом руководстве: **REL_15_STABLE**
+Версия Postgres в этом руководстве: **REL_16_STABLE**
 
 ## Шаг 1. Подготовка и компиляция
 1. Авторизуемся в системе и входим под учёткой root.
@@ -10,7 +10,7 @@ su -
 2. Установка необходимых пакетов для компиляции Postgres.
 ```
 apt -y update && apt -y upgrade
-apt install gnupg2 git gcc make flex bison libreadline-dev zlib1g-dev libssl-dev
+apt install gnupg2 git gcc make flex bison libreadline-dev zlib1g-dev libssl-dev libpq5
 ```
 
 3. Возвращаемся под учётку обычного пользователя.
@@ -21,7 +21,7 @@ exit
 4. Клонируем исходники Postgres с github.
 ```
 git clone https://github.com/postgres/postgres.git && cd postgres/
-git checkout REL_15_STABLE
+git checkout REL_16_STABLE
 ```
 
 5. Выполняем конфигурацию проекта и компилируем.
